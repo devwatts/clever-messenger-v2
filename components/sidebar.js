@@ -1,6 +1,7 @@
 import Image from "next/image";
 
-export default function SideNav(){
+export default function SideNav(props){
+
 return(
 <div className="w-[80px] bg-[#F1F1F5] h-[100vh] flex flex-col items-center justify-between border-r-[1px] border-r-[#bebcbe]">
     <div className="flex flex-col items-center justify-center">
@@ -8,10 +9,10 @@ return(
             <Image src={'/static/images/logo.png'} height={'40px'} width={'40px'}></Image>
         </div>
         <div className="h-[50px] flex items-center cursor-pointer">
-            <Image src={'/static/images/dashboard.png'} height={'23px'} width={'23px'}></Image>
+            <Image id="Dashboard" src={'/static/images/dashboard.png'} height={'23px'} width={'23px'}></Image>
         </div>
         <div className="h-[50px] flex items-center cursor-pointer">
-            <Image src={'/static/images/contacts.png'} height={'23px'} width={'23px'}></Image>
+            <Image id="Contacts" src={'/static/images/contacts.png'} height={'23px'} width={'23px'}></Image>
         </div>
         <div className="h-[50px] flex items-center cursor-pointer">
             <Image src={'/static/images/message.png'} height={'23px'} width={'23px'}></Image>
