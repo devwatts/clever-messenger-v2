@@ -18,7 +18,7 @@ export default function Home() {
       <div className={`w-[100%] flex`}>
           <SideNav currentOption={sideNavOption} changeOption={setSideNavOption}></SideNav>
           <div className='w-[calc(100%-80px)]'>
-            <NavBar></NavBar>
+            <NavBar currentOption={sideNavOption}></NavBar>
             <div className='main-board p-[30px]'>
                 {returnComponent(sideNavOption)}
             </div>

@@ -1,5 +1,6 @@
 import Image from "next/dist/client/image";
-export default function NavBar(){
+
+export default function NavBar(props){
     return(
     <div className="h-[60px] w-[100%] bg-[#F1F1F5] border-b-[1px] border-b-[#bebcbe]">
             <div className="h-[100%] flex justify-between items-center pl-[15px] pr-[15px]">
@@ -7,7 +8,7 @@ export default function NavBar(){
                     <div className="w-fit p-[5px] font-bold pl-[12px] pr-[12px] rounded-lg bg-[#fafcff]">
                         <span className="text-[gray] mr-[5px]">@appzstudio</span> 
                         <span className="text-[#1673ff]">/</span> 
-                        <span className="ml-[5px]">Dashboard</span>
+                        <span className="ml-[5px]">{props.currentOption}</span>
                     </div>
                     <div className="bg-[#bababa] h-[25px] w-[25px] ml-[10px] flex items-center justify-center rounded-full">
                         <Image src={'/static/images/info.png'} height={'12px'} width={'12px'}></Image>
